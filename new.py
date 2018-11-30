@@ -6,5 +6,7 @@
 # dir()  -->  Mostra os comandos possíveis de uma variável
 # help()  --> Ajuda
 
-from random import sample
-print(sample(range(10), 10))
+print('Hello World')
+from faker import Faker
+fake = Faker('pt-Br')
+print(f'Novo email: {fake.email()}')
